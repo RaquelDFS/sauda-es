@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saudações</title>
+    <style>
+    
+    </style>
+  </head>
+  <body>
+    <div id="square">
+      <h1>Saudações!</h1>
+      <input placeholder="Digite seu nome aqui" id="pessoaNome" type="text" />
+    </div>
+    <!-- assim que clicar, chamar a função -->
+    <button onclick="Darnome () ">Receber saudação</button><br />
+    <h2><span></span></h2>
+
+    <script>
+      var nome = document.querySelector("#pessoaNome");
+      var resultado = document.querySelector("span");
+      function Darnome() {
+        resultado.innerHTML = "Olá" + " " + nome.value + "!";
+      }
+
+    </script>
+  </body>
+</html>
